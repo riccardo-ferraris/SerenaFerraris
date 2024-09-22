@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Personalizzazione dei puntini di navigazione */
+.slick-dots li button:before {
+  font-size: 16px;  /* Dimensione dei puntini */
+  color: gray;      /* Colore dei puntini */
+}
+
+/* Cambia colore quando il puntino è attivo */
+.slick-dots li.slick-active button:before {
+  color: #102e5e;     /* Colore del puntino attivo */
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
