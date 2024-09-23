@@ -1,6 +1,5 @@
 import AboutMe from "../components/AboutMe";
 import Carousel from "../components/Carousel";
-import ContactForm from "../components/ContactForm";
 import Reviews from "../components/Reviews";
 
 
@@ -15,9 +14,6 @@ function Home() {
             </div>
             <div id="reviews">
                 <Reviews />
-            </div>
-            <div id="contact-form">
-                <ContactForm />
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Divider from './Divider';
+import Divider from '../components/Divider';
 import emailjs from 'emailjs-com';
 import 'react-datepicker/dist/react-datepicker.css';
 import DatePicker from 'react-datepicker';
@@ -83,7 +83,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<div className="py-8 px-8 bg-gray-100">
+		<div className="py-4 px-8 bg-gray-100">
 			<Divider text={"Contattami"} />
 			<div className="max-w-xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg">
 				{isSubmitted ? (

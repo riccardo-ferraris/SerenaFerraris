@@ -26,9 +26,9 @@ const Navbar = () => {
             <>
               <li><Link to="/" className="text-[#102e5e] hover:text-gray-400 font-bold" onClick={() => document.getElementById('about-me')?.scrollIntoView({ behavior: 'smooth' })}>Chi sono</Link></li>
               <li><Link to="/" className="text-[#102e5e] hover:text-gray-400 font-bold" onClick={() => document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' })}>Dicono di me</Link></li>
-              <li><Link to="/" className="text-[#102e5e] hover:text-gray-400 font-bold" onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}>Contattami</Link></li>
             </>
           )}
+          <li><Link to="/contact_form" className="text-[#102e5e] hover:text-gray-400 font-bold" onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}>Contattami</Link></li>
           <li><Link to='/gallery' className="text-[#102e5e] hover:text-gray-400 font-bold">Galleria</Link></li>
         </ul>
       </div>
@@ -39,9 +39,9 @@ const Navbar = () => {
             <>
               <li><Link to="/" className="text-[#102e5e] hover:text-gray-400 font-bold" onClick={() => {document.getElementById('about-me')?.scrollIntoView({ behavior: 'smooth' }); toggleMenu()}}>Chi sono</Link></li>
               <li><Link to="/" className="text-[#102e5e] hover:text-gray-400 font-bold" onClick={() => {document.getElementById('reviews')?.scrollIntoView({ behavior: 'smooth' }); toggleMenu()}}>Dicono di me</Link></li>
-              <li><Link to="/" className="text-[#102e5e] hover:text-gray-400 font-bold" onClick={() => {document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' }); toggleMenu()}}>Contattami</Link></li>
             </>
           )}
+          <li><Link to="/contact_form" className="text-[#102e5e] hover:text-gray-400 font-bold" onClick={() => {document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' }); toggleMenu()}}>Contattami</Link></li>
           <li><Link to='/gallery' className="text-[#102e5e] hover:text-gray-400 font-bold" onClick={toggleMenu}>Galleria</Link></li>
         </ul>
       )}
