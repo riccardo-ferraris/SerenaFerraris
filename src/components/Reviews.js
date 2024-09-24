@@ -59,11 +59,11 @@ const Reviews = () => {
     setLoading(true);
 
     // Invia la recensione tramite EmailJS
-    emailjs.send('service_ef5ypa2', 'template_i22o3cf', {
+    emailjs.send('service_r3t8a6m', 'template_70vhm1p', {
       name: formData.name,
       review: formData.review,
       rating: formData.rating,
-    }, '9td0FTMQbTXiveDeG')
+    }, 'nbN3E8DNXi23ZEJgo')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setIsSubmitted(true);

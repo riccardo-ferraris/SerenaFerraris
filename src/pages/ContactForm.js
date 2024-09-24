@@ -205,7 +205,7 @@ const ContactForm = () => {
 					? formData.wedding_date.toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit', year: 'numeric' })
 					: '',
 			};
-			emailjs.send('service_ef5ypa2', 'template_u619rzr', formDataToSend, '9td0FTMQbTXiveDeG')
+			emailjs.send('service_r3t8a6m', 'template_m1vpxne', formDataToSend, 'nbN3E8DNXi23ZEJgo')
 				.then((response) => {
 					console.log('SUCCESS!', response.status, response.text);
 					setIsSubmitted(true);
