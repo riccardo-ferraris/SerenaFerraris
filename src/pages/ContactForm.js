@@ -109,7 +109,7 @@ const ContactForm = () => {
 			if (!firstInvalidField) firstInvalidField = 'wedding_date';
 		}
 		// Validazione messaggio (minimo 10 caratteri)
-		if (formData.message.length < 10) {
+		if (formData.message.trim().length < 10) {
 			valid = false;
 			formErrors.message = 'Il messaggio deve contenere almeno 10 caratteri';
 			if (!firstInvalidField) firstInvalidField = 'message';

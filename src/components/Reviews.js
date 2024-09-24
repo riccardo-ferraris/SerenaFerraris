@@ -12,10 +12,12 @@ const Reviews = () => {
   const [showForm, setShowForm] = useState(false); // Stato per visualizzare il form
   const [formData, setFormData] = useState({ name: '', review: '', rating: 0 }); // Stato per i dati del form
   const [isSubmitted, setIsSubmitted] = useState(false);
-
+  const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false); // Stato per il loader
 
   const toggleForm = () => {
     setShowForm(!showForm);
+    setIsSubmitted(false);
   };
 
   // Funzione per gestire il cambiamento dei campi del form
@@ -28,13 +30,33 @@ const Reviews = () => {
     setFormData({ ...formData, rating });
   };
 
+  // Funzione per validare i campi del form
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = 'Il nome è obbligatorio.';
+    }
+    if (!formData.review.trim()) {
+      newErrors.review = 'La recensione è obbligatoria.';
+    }
+    if (formData.rating === 0) {
+      newErrors.rating = 'La valutazione è obbligatoria.';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   // Funzione per gestire l'invio del form
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Validazione: assicuriamoci che ci sia un nome, una recensione e una valutazione
-    if (formData.name === '' || formData.review === '' || formData.rating === 0) {
+
+    if (!validateForm()) {
       return;
     }
+
+    setLoading(true);
 
     // Invia la recensione tramite EmailJS
     emailjs.send('service_ef5ypa2', 'template_i22o3cf', {
@@ -46,13 +68,11 @@ const Reviews = () => {
         console.log('SUCCESS!', response.status, response.text);
         setIsSubmitted(true);
         setFormData({ name: '', review: '', rating: 0 }); // Ripristina il form
+        setLoading(false);
       }, (err) => {
         console.log('FAILED...', err);
+        setLoading(false);
       });
-
-    // Ripristina il form e nasconde il form
-    setFormData({ name: '', review: '', rating: 0 });
-    setIsSubmitted(true);
   };
 
   return (
@@ -101,9 +121,9 @@ const Reviews = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
+                  className={`w-full px-4 py-2 border ${errors.name ? 'border-red-500' : 'border-gray-300'} rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500`}
                 />
+                {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
               </div>
               <div className="mb-4">
                 <label htmlFor="review" className="block text-gray-700 font-bold mb-2">
@@ -114,10 +134,10 @@ const Reviews = () => {
                   name="review"
                   value={formData.review}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className={`w-full px-4 py-2 border ${errors.review ? 'border-red-500' : 'border-gray-300'} rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500`}
                   rows="4"
-                  required
                 />
+                {errors.review && <p className="text-red-500 text-sm mt-1">{errors.review}</p>}
               </div>
               <div className="mb-4">
                 <label className="block text-gray-700 font-bold mb-2">
@@ -132,14 +152,19 @@ const Reviews = () => {
                     />
                   ))}
                 </div>
+                {errors.rating && <p className="text-red-500 text-sm mt-1">{errors.rating}</p>}
               </div>
               <div className="text-center">
-                <button
-                  type="submit"
-                  className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors duration-300"
-                >
-                  Invia recensione
-                </button>
+                {loading ? (
+                  <p className="text-blue-500 font-bold">Invio in corso...</p>  // Indicatore di caricamento
+                ) : (
+                  <button
+                    type="submit"
+                    className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors duration-300"
+                  >
+                    Invia recensione
+                  </button>
+                )}
               </div>
             </form>
           }
