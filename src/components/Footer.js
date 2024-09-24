@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaInstagram, FaRegHeart } from 'react-icons/fa';
 
 const Footer = () => {
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.iubenda.com/iubenda.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <footer className="bg-white text-[#102e5e] py-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
@@ -26,7 +34,11 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Informazioni Legali</h3>
           <p><a href="#home" className="hover:text-gray-400">Termini di servizio</a></p>
-          <p><a href="#home" className="hover:text-gray-400">Privacy Policy</a></p>
+          <p>
+          <a href="https://www.iubenda.com/privacy-policy/46463258" className="hover:text-gray-400" title="Privacy Policy">
+              Privacy Policy
+            </a>
+          </p>
         </div>
       </div>
       {/* Copyright generale e link ai social */}

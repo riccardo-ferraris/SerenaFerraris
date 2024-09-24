@@ -2,7 +2,6 @@ import AboutMe from "../components/AboutMe";
 import Carousel from "../components/Carousel";
 import Reviews from "../components/Reviews";
 
-
 function Home() {
     return (
         <div className="home">
