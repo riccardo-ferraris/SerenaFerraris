@@ -10,7 +10,15 @@ import image8 from "../assets/images/Gallery/gallery8.jpg"
 import image9 from "../assets/images/Gallery/gallery9.jpg"
 
 const images = [
-    image1, image2, image3, image4, image5, image6, image7, image8, image9,
+    image1, 
+    image2, 
+    image3, 
+    // image4, 
+    image5, 
+    image6, 
+    image7, 
+    // image8, 
+    image9,
   ];
 
 const Gallery = () => {
