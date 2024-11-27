@@ -1,25 +1,25 @@
 import React from 'react';
-import image1 from "../assets/images/Gallery/gallery1.jpg"
-import image2 from "../assets/images/Gallery/gallery2.jpg"
-import image3 from "../assets/images/Gallery/gallery3.jpg"
-import image4 from "../assets/images/Gallery/gallery4.jpg"
-import image5 from "../assets/images/Gallery/gallery5.jpg"
-import image6 from "../assets/images/Gallery/gallery6.jpg"
-import image7 from "../assets/images/Gallery/gallery7.jpg"
-import image8 from "../assets/images/Gallery/gallery8.jpg"
-import image9 from "../assets/images/Gallery/gallery9.jpg"
+import image1 from "../assets/images/Gallery/compressed/gallery1 cmpd.jpg"
+import image2 from "../assets/images/Gallery/compressed/gallery2 cmpd.jpg"
+import image3 from "../assets/images/Gallery/compressed/gallery3 cmpd.jpg"
+//import image4 from "../assets/images/Gallery/compressed/gallery4 cmpd.jpg"
+import image5 from "../assets/images/Gallery/compressed/gallery5 cmpd.jpg"
+import image6 from "../assets/images/Gallery/compressed/gallery6 cmpd.jpg"
+import image7 from "../assets/images/Gallery/compressed/gallery7 cmpd.jpg"
+//import image8 from "../assets/images/Gallery/compressed/gallery8 cmpd.jpg"
+import image9 from "../assets/images/Gallery/compressed/gallery9 cmpd.jpg"
 
 const images = [
-    image1, 
-    image2, 
-    image3, 
-    // image4, 
-    image5, 
-    image6, 
-    image7, 
-    // image8, 
-    image9,
-  ];
+  image1,
+  image2,
+  image3,
+  // image4, 
+  image5,
+  image6,
+  image7,
+  // image8, 
+  image9,
+];
 
 const Gallery = () => {
   return (
