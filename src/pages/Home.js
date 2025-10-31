@@ -11,16 +11,16 @@ function Home() {
     description:
       "Fotografa specializzata in matrimoni stile reportage e fotografia emozionale",
     url: "https://serenaferraris.com",
-    image: "/logo192.png",
-    telephone: "+39-xxx-xxx-xxxx",
+    image: "/logoBlu.svg",
+    telephone: "+39-3662015885",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Torino",
-      addressRegion: "Piemonte",
+      addressLocality: "Roma e Napoli",
+      addressRegion: "Lazio e Campania",
       addressCountry: "IT",
     },
     serviceType: "Wedding Photography",
-    areaServed: ["Piemonte", "Valle d'Aosta", "Lombardia"],
+    areaServed: ["Lazio", "Campania", "Tutta Italia", "Roma", "Napoli"],
     priceRange: "€€€",
   };
 
@@ -28,8 +28,8 @@ function Home() {
     <div className="home">
       <SEO
         title="Home"
-        description="Serena Ferraris - Emotion Photographer specializzata in matrimoni stile reportage. Cattura le emozioni più autentiche con un approccio discreto e psicologicamente formato."
-        keywords="fotografa matrimonio Torino, servizi fotografici reportage, emotion photographer, matrimonio spontaneo, fotografia psicologia"
+        description="Serena Ferraris - Fotografa di matrimoni in stile reportage con base a Roma e Napoli. Realizzo servizi fotografici autentici e pieni di emozione in tutta Italia."
+        keywords="fotografa matrimonio Roma, fotografa matrimonio Napoli, wedding photographer Italia, reportage matrimoniale, emotion photographer, matrimonio spontaneo, fotografia emozionale"
         url="/"
         structuredData={structuredData}
       />

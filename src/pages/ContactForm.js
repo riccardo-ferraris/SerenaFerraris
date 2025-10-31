@@ -272,19 +272,45 @@ const ContactForm = () => {
     }
   };
 
+  //   const structuredData = {
+  //     "@context": "https://schema.org",
+  //     "@type": "ContactPage",
+  //     name: "Contatti - Serena Ferraris Photography",
+  //     description:
+  //       "Contatta Serena Ferraris per prenotare il tuo servizio fotografico matrimoniale in stile reportage",
+  //     url: "https://serenaferraris.com/contact_form",
+  //     mainEntity: {
+  //       "@type": "LocalBusiness",
+  //       name: "Serena Ferraris Photography",
+  //       description: "Fotografa specializzata in matrimoni stile reportage",
+  //       telephone: "+39-3662015885",
+  //       email: "serenafer94@gmail.com",
+  //     },
+  //   };
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: "Contatti - Serena Ferraris Photography",
     description:
-      "Contatta Serena Ferraris per prenotare il tuo servizio fotografico matrimoniale in stile reportage",
+      "Contatta Serena Ferraris per prenotare o richiedere informazioni sui servizi fotografici di matrimonio in stile reportage a Roma, Napoli e in tutta Italia.",
     url: "https://serenaferraris.com/contact_form",
     mainEntity: {
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       name: "Serena Ferraris Photography",
-      description: "Fotografa specializzata in matrimoni stile reportage",
-      telephone: "+39-xxx-xxx-xxxx",
-      email: "serena@serenaferraris.com",
+      description:
+        "Fotografa specializzata in matrimoni stile reportage ed emozionale",
+      url: "https://serenaferraris.com",
+      telephone: "+39-3662015885",
+      email: "serenafer94@gmail.com",
+      areaServed: ["Roma", "Napoli", "Lazio", "Campania", "Tutta Italia"],
+      serviceType: "Wedding Photography",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Roma e Napoli",
+        addressRegion: "Lazio e Campania",
+        addressCountry: "IT",
+      },
     },
   };
 
@@ -292,8 +318,8 @@ const ContactForm = () => {
     <div className="py-4 px-8 bg-gray-100">
       <SEO
         title="Contatti"
-        description="Contatta Serena Ferraris per il tuo servizio fotografico matrimoniale. Preventivi personalizzati per matrimoni in stile reportage in Piemonte e Valle d'Aosta."
-        keywords="contatti fotografa matrimonio, preventivo fotografo matrimonio, prenotazione servizio fotografico, matrimonio Torino fotografa"
+        description="Contatta Serena Ferraris per il tuo servizio fotografico di matrimonio in stile reportage. Disponibile a Roma, Napoli e per trasferte in tutta Italia."
+        keywords="contatti fotografa matrimonio Roma, contatti fotografa matrimonio Napoli, preventivo wedding photographer, reportage matrimonio, fotografa emozionale"
         url="/contact_form"
         type="website"
         structuredData={structuredData}
@@ -505,11 +531,11 @@ const ContactForm = () => {
 
             <div className="text-center">
               {loading ? (
-                <p className="text-blue-500 font-bold">Invio in corso...</p> // Indicatore di caricamento
+                <p className="text-blue-700 font-bold">Invio in corso...</p> // Indicatore di caricamento
               ) : (
                 <button
                   type="submit"
-                  className="mt-4 w-full py-3 bg-blue-500 text-white font-bold rounded-full hover:bg-blue-600 transition-colors duration-300"
+                  className="mt-4 w-full py-3 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 transition-colors duration-300"
                 >
                   Invia Messaggio
                 </button>
