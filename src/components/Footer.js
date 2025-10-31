@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
-import { FaInstagram, FaRegHeart } from 'react-icons/fa';
+import React, { useEffect } from "react";
+import { FaInstagram, FaRegHeart } from "react-icons/fa";
 
 const Footer = () => {
-
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://cdn.iubenda.com/iubenda.js';
+    const script = document.createElement("script");
+    script.src = "https://cdn.iubenda.com/iubenda.js";
     script.async = true;
     document.body.appendChild(script);
   }, []);
@@ -16,7 +15,9 @@ const Footer = () => {
         {/* Sezione contatti */}
         <div>
           <h3 className="text-lg font-bold mb-4">Contatti</h3>
-          <p>Indirizzo: Via Enrico Carillo 9/4, San Giuseppe Vesuviano 80047, NA</p>
+          <p>
+            Indirizzo: Via Enrico Carillo 9/4, San Giuseppe Vesuviano 80047, NA
+          </p>
           <p>Email: serenafer94@gmail.com</p>
           <p>Telefono: +39 379 196 42 74</p>
         </div>
@@ -25,17 +26,37 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">Seguimi sui Social</h3>
           <div className="flex flex-col md:items-start items-center space-y-3">
-            <a href="https://www.instagram.com/serenaferrarisphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="inline-flex item-center space-x-2 text-[#102e5e] hover:text-pink-500"><FaInstagram size={24} /><span>Instagram</span></a>
-            <a href="https://www.matrimonio.com/fotografo-matrimonio/serena-ferraris--e388305" className="inline-flex item-center space-x-2 text-[#102e5e] hover:text-red-500"><FaRegHeart size={24} /><span>matrimonio.com</span></a>
+            <a
+              href="https://www.instagram.com/serenaferrarisphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              className="inline-flex item-center space-x-2 text-[#102e5e] hover:text-pink-500"
+            >
+              <FaInstagram size={24} />
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://www.matrimonio.com/fotografo-matrimonio/serena-ferraris--e388305"
+              className="inline-flex item-center space-x-2 text-[#102e5e] hover:text-red-500"
+            >
+              <FaRegHeart size={24} />
+              <span>matrimonio.com</span>
+            </a>
           </div>
         </div>
 
         {/* Sezione Copyright */}
         <div>
           <h3 className="text-lg font-bold mb-4">Informazioni Legali</h3>
-          <p><a href="#home" className="hover:text-gray-400">Termini di servizio</a></p>
           <p>
-          <a href="https://www.iubenda.com/privacy-policy/46463258" className="hover:text-gray-400" title="Privacy Policy">
+            <a href="#home" className="hover:text-gray-400">
+              Termini di servizio
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.iubenda.com/privacy-policy/46463258"
+              className="hover:text-gray-400"
+              title="Privacy Policy"
+            >
               Privacy Policy
             </a>
           </p>
@@ -43,7 +64,10 @@ const Footer = () => {
       </div>
       {/* Copyright generale e link ai social */}
       <div className="mt-8 text-center">
-        <p>© 2024 Serena Ferraris. Tutti i diritti riservati.</p>
+        <p>
+          © {new Date().getFullYear()} Serena Ferraris. Tutti i diritti
+          riservati.
+        </p>
       </div>
     </footer>
   );
