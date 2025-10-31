@@ -1,0 +1,6 @@
+# Handle React Router (SPA redirects)
+/*    /index.html   200
+
+# Redirect old URLs if needed (examples)
+# /old-gallery    /gallery    301
+# /contact        /contact_form    301
