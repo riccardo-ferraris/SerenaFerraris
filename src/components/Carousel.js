@@ -1,11 +1,11 @@
 import { React, useState } from "react";
 import Slider from "react-slick";
-import image1 from "../assets/images/Carousel/carousel1.jpg";
+import image1 from "../assets/images/Carousel/carousel1.JPG";
 import image2 from "../assets/images/Carousel/carousel2.JPG";
-import image3 from "../assets/images/Carousel/carousel3.jpg";
+import image3 from "../assets/images/Carousel/carousel3.JPG";
 import image4 from "../assets/images/Carousel/carousel4.JPG";
-import image5 from "../assets/images/Carousel/carousel5.JPG";
-import image6 from "../assets/images/Carousel/carousel6.JPG";
+import image5 from "../assets/images/Carousel/carousel5.jpg";
+import image6 from "../assets/images/Carousel/carousel6.jpg";
 
 import "../index.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
