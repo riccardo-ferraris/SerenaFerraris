@@ -1,7 +1,7 @@
 import React from "react";
-import about1 from "../assets/images/AboutMe/about1.jpg";
-import about2 from "../assets/images/AboutMe/about2.jpg";
-import about3 from "../assets/images/AboutMe/about3.jpg";
+import about1 from "../assets/images/AboutMe/about1.JPG";
+import about2 from "../assets/images/AboutMe/about2.JPG";
+import about3 from "../assets/images/AboutMe/about3.JPG";
 import about4 from "../assets/images/AboutMe/about4.jpg";
 
 const aboutSections = [
