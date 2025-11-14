@@ -2,6 +2,7 @@ import React from "react";
 import about1 from "../assets/images/AboutMe/about1.jpg";
 import about2 from "../assets/images/AboutMe/about2.jpg";
 import about3 from "../assets/images/AboutMe/about3.jpg";
+import about4 from "../assets/images/AboutMe/about4.jpg";
 
 const aboutSections = [
   {
@@ -86,6 +87,15 @@ const AboutMe = () => {
             </div>
           </div>
         ))}
+
+        <div className="w-full h-auto flex items-center justify-center">
+          <img
+            src={about4}
+            alt="Serena Ferraris - Emotion Photographer"
+            className="md:w-5/12 lg:w-3/12 h-auto object-cover rounded-lg shadow-lg"
+          />
+        </div>
+
         <div className="text-center px-8">
           <h2 className="text-2xl font-bold mb-4 text-[#594c47]">
             Cos'è il reportage?

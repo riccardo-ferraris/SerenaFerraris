@@ -4,17 +4,13 @@ import image1 from "../assets/images/Carousel/carousel1.jpg";
 import image2 from "../assets/images/Carousel/carousel2.jpg";
 import image3 from "../assets/images/Carousel/carousel3.jpg";
 import image4 from "../assets/images/Carousel/carousel4.jpg";
+import image5 from "../assets/images/Carousel/carousel5.jpg";
+import image6 from "../assets/images/Carousel/carousel6.jpg";
+
 import "../index.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
-// const images = [
-//   'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0',
-//   'https://images.unsplash.com/photo-1517841905240-472988babdf9',
-//   'https://images.unsplash.com/photo-1519985176271-adb1088fa94c',
-//   'https://images.unsplash.com/photo-1507525428034-b723cf961d3e',
-// ];
-
-const images = [image1, image2, image3, image4];
+const images = [image1, image2, image3, image4, image5, image6];
 
 // Freccia per la navigazione successiva
 const NextArrow = ({ onClick, size }) => {
