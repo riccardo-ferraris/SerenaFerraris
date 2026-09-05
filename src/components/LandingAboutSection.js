@@ -17,10 +17,10 @@ const LandingAboutSection = () => {
 
           <div className="mt-8 space-y-6 text-base leading-8 text-slate-900/55 sm:text-lg">
             <p>
-              Da oltre 10 anni racconto storie d&apos;amore attraverso la mia
-              fotocamera. Non mi considero un semplice fotografo, ma un
-              narratore visivo che ha il privilegio di immortalare i momenti più
-              belli della vostra vita.
+              Da anni racconto storie d&apos;amore attraverso la mia fotocamera.
+              Non mi considero una semplice fotografa, ma un narratore visivo
+              che ha il privilegio di immortalare i momenti più belli della
+              vostra vita.
             </p>
 
             <p>
@@ -42,8 +42,7 @@ const LandingAboutSection = () => {
         {/* STATS + IMAGE */}
         <div className="mt-10 flex flex-col items-center gap-12">
           {/* Stats */}
-          <div className="grid grid-cols-2 w-full">
-            {/* Left stat */}
+          {/* <div className="grid grid-cols-2 w-full">
             <div className="w-full text-center pr-8">
               <p className="font-serif text-4xl text-[#1f3865]/90 sm:text-5xl">
                 200+
@@ -53,7 +52,6 @@ const LandingAboutSection = () => {
               </p>
             </div>
 
-            {/* Right stat */}
             <div className="w-full border-l border-slate-900/20 pl-8 text-center">
               <p className="font-serif text-4xl text-[#1f3865]/90 sm:text-5xl">
                 10+
@@ -62,7 +60,7 @@ const LandingAboutSection = () => {
                 Anni di esperienza
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Image with offset frame */}
           <div className="flex justify-center">
