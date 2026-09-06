@@ -26,7 +26,9 @@
     "build:netlify": "CI=false npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "generate-sitemap": "node scripts/generate-sitemap.js"
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "premiere:server": "node server/premiere.cjs",
+    "test:premiere": "node --test server/premiere.test.cjs"
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +50,6 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.11"
-  }
+  },
+  "proxy": "http://127.0.0.1:3001"
 }
