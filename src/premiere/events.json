@@ -1,15 +1,15 @@
 [
   {
-    "id": "laura-filippo",
-    "slug": "laura-filippo",
-    "bride": "Laura",
-    "groom": "Filippo",
+    "id": "wanda-alberto",
+    "slug": "wanda-alberto",
+    "bride": "Wanda",
+    "groom": "Alberto",
     "name": "Il nostro per sempre",
-    "date": "2026-09-07",
-    "location": "Villa Punta Pennata, Bacoli",
-    "coverImage": "/photos/laura-filippo.jpeg",
+    "date": "2026-09-12",
+    "location": "Villa Turrita, Caserta",
+    "coverImage": "/photos/wanda-alberto.jpeg",
     "videoUrl": "/videos/anteprima.mp4",
-    "premiere_start_time": "2026-09-07T22:15:00+02:00",
+    "premiere_start_time": "2026-09-11T19:16:00+02:00",
     "timeZone": "Europe/Rome"
   }
 ]

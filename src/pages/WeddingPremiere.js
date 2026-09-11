@@ -12,6 +12,7 @@ import cover from "../assets/images/Carousel/carousel1.JPG";
 import configuredEvents from "../premiere/events.json";
 import usePremiere from "../premiere/usePremiere";
 import PremierePlayer from "../premiere/PremierePlayer";
+import InstagramFinale, { INSTAGRAM_URL } from "../premiere/InstagramFinale";
 import { premierePhase, remainingSeconds } from "../premiere/timing";
 import "./WeddingPremiere.css";
 
@@ -38,7 +39,7 @@ function InstagramBox() {
   return (
     <a
       className="premiere-instagram"
-      href="https://www.instagram.com/serenaferrarisphotography/"
+      href={INSTAGRAM_URL}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Visita Serena Ferraris su Instagram (si apre in una nuova scheda)"
@@ -363,8 +364,9 @@ export default function WeddingPremiere() {
           </h2>
           <Names event={event} />
           <p>Grazie per aver vissuto questo momento insieme.</p>
+          <InstagramFinale />
           <button
-            className="premiere-button"
+            className="premiere-button premiere-replay-button"
             onClick={() => {
               setEnded(false);
               setReplay(true);
@@ -372,7 +374,6 @@ export default function WeddingPremiere() {
           >
             RIVIVI LA PREMIÈRE <FiArrowRight />
           </button>
-          <InstagramBox />
         </section>
       )}
       {entered && (!live.connected || live.error) && (

@@ -40,6 +40,45 @@
 
 .premiere-invite-copy > .premiere-instagram { margin-bottom: 32px; }
 
+.premiere-instagram-finale {
+  width: 100%;
+  max-width: 680px;
+  margin-top: 24px;
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid #b99c76;
+  border-radius: 18px;
+  background: radial-gradient(ellipse at top right, #a66a4840, transparent 65%), #24251e;
+  box-shadow: 0 24px 70px #0004;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.premiere-instagram-profile { display: flex; align-items: center; gap: 14px; text-align: left; max-width: 100%; }
+.premiere-instagram-profile > div { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.premiere-instagram-profile-name { font: 22px/1.2 Georgia, serif; }
+.premiere-instagram-avatar { display: grid; place-items: center; flex-shrink: 0; width: 58px; height: 58px; border-radius: 50%; background: linear-gradient(135deg, #dfb87f, #b77270 55%, #827394); padding: 2px; }
+.premiere-instagram-finale-icon { width: 54px; height: 54px; padding: 13px; border-radius: 50%; background: #24251e; color: #f0dcc0; }
+.premiere-instagram-message { display: flex; flex-direction: column; gap: 14px; align-items: center; }
+.premiere-instagram-message .premiere-eyebrow { font-size: 12px; color: #dcc09b; }
+.premiere-instagram-finale h3 { margin: 0; font: clamp(32px, 4.5vw, 48px)/1.12 Georgia, serif; letter-spacing: -1px; }
+.premiere-instagram-finale h3 em { color: #ebcc9f; }
+.premiere-instagram-finale p { margin: 0; font-size: 16px; line-height: 1.65; color: var(--muted); }
+.premiere-instagram-finale .premiere-instagram-handle { color: var(--ink); }
+.premiere-instagram-finale .premiere-instagram-cta { width: 100%; max-width: none; min-height: 60px; border-radius: 6px; background: #e5cfad; border-color: #e5cfad; color: #201c16; text-decoration: none; font-weight: 600; }
+.premiere-instagram-finale .premiere-instagram-cta:hover { background: #f2dfc2; }
+.premiere-instagram-redirect { width: 100%; border-top: 1px solid #ffffff20; padding-top: 20px; }
+.premiere-instagram-countdown { display: flex; align-items: center; justify-content: center; gap: 16px; text-align: left; }
+.premiere-instagram-seconds { display: grid; place-items: center; flex-shrink: 0; width: 58px; height: 58px; border: 2px solid #b99c76; border-radius: 50%; color: #f0dcc0; font: 30px/1 Georgia, serif; font-variant-numeric: tabular-nums; }
+.premiere-instagram-countdown p { max-width: 290px; font-size: 14px; }
+.premiere-instagram-countdown p > span { display: block; color: var(--ink); font-size: 16px; }
+.premiere-stay { background: none; border: 0; color: var(--muted); text-decoration: underline; text-underline-offset: 4px; font-size: 13px; min-height: 44px; padding: 8px 12px; margin-top: 8px; }
+.premiere-ending { padding-top: 32px; }
+.premiere-ending-heart { font-size: 32px; margin: 12px 0; }
+.premiere-ending h2 { font-size: clamp(25px, 3vw, 34px); }
+.premiere-ending .premiere-names { margin-top: 16px; }
+.premiere-ending > .premiere-replay-button { background: transparent; border-color: var(--line); color: var(--muted); margin-top: 24px; }
+
 /* Readable supporting copy across all premiere screens. */
 .premiere-intro,
 .premiere-private,
